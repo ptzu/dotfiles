@@ -24,16 +24,14 @@ let g:indentLine_color_term = 239
 inoremap jk <ESC>
 nnoremap <Leader>a :tabprev<CR>
 nnoremap <Leader>d :tabnext<CR>
+nnoremap <Leader>q :tabmove-1<CR>
+nnoremap <Leader>e :tabmove+1<CR>
 " ----------------------------------------------------
-" gitgutter
-highlight GitGutterAdd    guifg=#009900 ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 " Vundle 
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
+"
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -46,7 +44,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " vim color scheme
-Plugin 'evgenyzinoviev/vim-vendetta'
+Plugin 'abcd40404/vim-vendetta'
 
 Plugin 'scrooloose/nerdtree' 
 Plugin 'jiangmiao/auto-pairs'
